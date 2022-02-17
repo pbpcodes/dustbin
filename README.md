@@ -9,7 +9,7 @@
 
 ---
 
-<p align="center"> A minimalistic pastebin clone, with important functionalities like Link Creation, Private Bins, Code Highlighting and much more.
+<p align="center"> A minimalistic pastebin clone
     <br> 
 </p>
 
@@ -23,7 +23,8 @@
 
 ## 🧐 Introduction <a name = "intro"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
+DUSTBIN has most of the important functionalities like Link Creation, Private Bins, Code Highlighting and much more.
+The purpose of this webapp is to make Text/Code sharing easier.
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
