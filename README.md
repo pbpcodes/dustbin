@@ -56,6 +56,7 @@ python main.py
 
 ## 📷 Images and Video <a name="images"></a> 
 Homepage <br>
+
 ![HomePage](/static/homepage.jpg) <br>
 <br>
 All Bins Page
