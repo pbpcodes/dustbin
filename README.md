@@ -55,7 +55,10 @@ python main.py
 ```
 
 ## 📷 Images and Video <a name="images"></a>
+<p>Homepage</p> <br>
 ![HomePage](/static/homepage.jpg) <br>
+<br>
+<p>AllBins Page</p> <br>
 ![AllBins](/static/allBinsPhoto.jpg)
 ## 🎈 Usage <a name="usage"></a>
 
