@@ -58,6 +58,8 @@ python main.py
 Homepage <br>
 ![HomePage](/static/homepage.jpg) <br>
 <br>
+All Bins Page
+<br>
 
 ![AllBins](/static/allBinsPhoto.jpg)
 ## 🎈 Usage <a name="usage"></a>
