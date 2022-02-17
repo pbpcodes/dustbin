@@ -66,8 +66,8 @@ def parse_hl(hl):
 
 
 def can_track():
-  
-    # Default value (if no header sent, or if invalid header)
+   
+
     track = True
     DNT = request.headers.get("DNT")
 
@@ -103,7 +103,7 @@ def submit():
         abort(500)
 
 
-@app.route('/paste/<string:paste_name>', methods=['GET'])
+@app.route('/bin/<string:paste_name>', methods=['GET'])
 def view_paste(paste_name=''):
     redirect_url = None
     redirect_url = check_url_paste(paste_name)  # if url only
@@ -112,14 +112,14 @@ def view_paste(paste_name=''):
         redirect(url_for('home'))
 
     if redirect_url:
-        webbrowser.open_new_tab(redirect_url)
+        return redirect(redirect_url)
 
     hl_lines = parse_hl(request.args.get('ln'))
     try:
         paste = ppaste_lib.PasteManager.fetch_paste(paste_name)
         highlighted_content, css = highlight_paste(paste, hl_lines)
         return render_template(
-            'paste.html',
+            'bin.html',
             paste=paste,
             content=highlighted_content,
             css=css,
@@ -131,7 +131,7 @@ def view_paste(paste_name=''):
         abort(500)
 
 
-@app.route('/paste/<string:paste_name>/raw', methods=['GET'])
+@app.route('/bin/<string:paste_name>/raw', methods=['GET'])
 def view_paste_raw(paste_name=''):
     if not paste_name:
         redirect(url_for('home'))
@@ -146,11 +146,11 @@ def view_paste_raw(paste_name=''):
         abort(500)
 
 
-@app.route('/pastes', methods=['GET'])
+@app.route('/allBins', methods=['GET'])
 def list_pastes():
     try:
         pastes = ppaste_lib.PasteManager.fetch_public_pastes()
-        return render_template('pastes.html', pastes=pastes)
+        return render_template('allBins.html', pastes=pastes)
     except ppaste_lib.PPasteException as e:
         LOGGER.error(e)
         abort(500)
@@ -158,15 +158,15 @@ def list_pastes():
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='PPaste - The only pastebin you need <3'
+        description='DustBin'
     )
 
     parser.add_argument(
         '--port',
         type=int,
         nargs=1,
-        help='The port on which to listen (default: 4242)',
-        default=4242
+        help='The port on which to listen (default: 5000)',
+        default=5000
     )
 
     args = parser.parse_args()

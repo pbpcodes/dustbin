@@ -177,13 +177,6 @@ select {
   text-transform: none;
 }
 
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
 
 button,
 html input[type="button"], /* 1 */
@@ -220,14 +213,6 @@ input::-moz-focus-inner {
 input {
   line-height: normal;
 }
-
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
 
 input[type="checkbox"],
 input[type="radio"] {
