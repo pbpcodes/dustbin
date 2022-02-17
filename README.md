@@ -29,7 +29,6 @@ The purpose of this webapp is to make Text/Code sharing easier.
 
 - Every created bin is auto-deleted after 24 hours.
 
-
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/) - Web Framework
@@ -42,7 +41,7 @@ The purpose of this webapp is to make Text/Code sharing easier.
 
 https://dusttbin.pbpcodes.repl.co/
 
-
+- The website has been optimized for Chrome browser. It should work fine on other browsers too.
 
 ### Installing
 
