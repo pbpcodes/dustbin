@@ -53,6 +53,7 @@ Run the following commands:
 pip install -r requirements.txt
 python main.py
 ```
+After this, your website will run in your local server! <br>
 
 ## 📷 Images and Video <a name="images"></a> 
 Homepage <br>
