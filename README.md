@@ -62,6 +62,8 @@ All Bins Page
 <br>
 
 ![AllBins](/static/allBins.jpg)
+
+[![pageVideo](/static/homepage.jpg)](/static/pageVid.mkv)
 ## 🎈 Usage <a name="usage"></a>
 
 Add notes about how to use the system.
