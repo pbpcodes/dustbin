@@ -18,7 +18,8 @@
 - [Introduction](#intro)
 - [Built Using](#built_using)
 - [Deployment](#deployment)
-- [Built Using](#built_using)
+- [Images and Video](#images)
+- [Usage](#usage)
 - [Authors](#authors)
 
 ## 🧐 Introduction <a name = "intro"></a>
@@ -53,7 +54,9 @@ pip install -r requirements.txt
 python main.py
 ```
 
-
+## 📷 Images and Video <a name="images"></a>
+![HomePage](/static/homepage.jpg) <br>
+![AllBins](/static/allBinsPhoto.jpg)
 ## 🎈 Usage <a name="usage"></a>
 
 Add notes about how to use the system.
