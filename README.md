@@ -24,7 +24,7 @@
 
 ## 🧐 Introduction <a name = "intro"></a>
 
-- DUSTBIN is a website where you can store your data and share it with your peers.
+DUSTBIN is a website where you can store your data and share it with your peers.
 
 The purpose of this webapp is to make Text/Code sharing easier.
 
