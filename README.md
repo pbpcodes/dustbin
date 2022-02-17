@@ -54,11 +54,11 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 📷 Images and Video <a name="images"></a>
-<p>Homepage</p> <br>
+## 📷 Images and Video <a name="images"></a> 
+Homepage <br>
 ![HomePage](/static/homepage.jpg) <br>
 <br>
-<p>AllBins Page</p> <br>
+
 ![AllBins](/static/allBinsPhoto.jpg)
 ## 🎈 Usage <a name="usage"></a>
 
