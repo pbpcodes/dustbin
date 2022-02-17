@@ -38,7 +38,7 @@ The purpose of this webapp is to make Text/Code sharing easier.
 - [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Templates 
 
 ## 🚀 Deployment <a name = "deployment"></a>
--Deployed using Repl.it
+- Deployed using Repl.it
 
 https://dusttbin.pbpcodes.repl.co/
 
