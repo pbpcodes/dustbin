@@ -61,7 +61,7 @@ Homepage <br>
 All Bins Page
 <br>
 
-![AllBins](/static/allBinsPhoto.jpg)
+![AllBins](/static/allBins.jpg)
 ## 🎈 Usage <a name="usage"></a>
 
 Add notes about how to use the system.
