@@ -32,7 +32,6 @@ It has most of the important functionalities like:
 - Link Creation
 - Private Bins
 - Code Highlighting
-- Private Bins
 - Every created bin is auto-deleted after 24 hours.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
