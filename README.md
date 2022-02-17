@@ -1,5 +1,5 @@
 
-<h3 align="center">Project Title</h3>
+<h3 align="center">DustBin</h3>
 
 <div align="center">
 
@@ -9,7 +9,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> A minimalistic pastebin clone, with important functionalities like Link Creation, Private Bins, Code Highlighting and much more.
     <br> 
 </p>
 
