@@ -27,6 +27,8 @@
 DUSTBIN has most of the important functionalities like Link Creation, Private Bins, Code Highlighting and much more.
 The purpose of this webapp is to make Text/Code sharing easier.
 
+- Every created bin is auto-deleted after 24 hours.
+
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
@@ -53,7 +55,11 @@ Run the following commands:
 pip install -r requirements.txt
 python main.py
 ```
-After this, your website will run in your local server! <br>
+Your website will start running in your local server! <br>
+
+```
+After this, you can host it anywhere you want. (Replit or Heroku is recommended!)
+```
 
 ## 📷 Images and Video <a name="images"></a> 
 Homepage <br>
