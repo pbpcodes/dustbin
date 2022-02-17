@@ -62,6 +62,8 @@ All Bins Page
 <br>
 
 ![AllBins](/static/allBins.jpg)
+<br>
+Demo video of the website: <br>
 
 [![pageVideo](/static/homepage.jpg)](https://youtu.be/8p6r8FOldZs)
 ## 🎈 Usage <a name="usage"></a>
