@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title style="margin-left:20%">DustBin</title>
+
+    {% if track %}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    {% else %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='skeleton.css') }}">
+    {% endif %}
+
+    {% block additional_css %}{% endblock %}
+  </head>
+
+  <body>
+      <div class="container">
+	<h1 style="color: white;">DustBin</h1>
+	<h3 style="color: white;">{% block title %}{% endblock %}</h3>
+	<p><button type="submit"><a href="{{ url_for('home') }}">Create New Bin</a></button>
+	  <button type="submit"><a href="{{ url_for('list_pastes') }}">Bins Till Date</a></button>
+
+	</p>
+
+      </div>
+
+      {% block main %}{% endblock %}
+
+      <footer style="background-color: black; padding: 12px; margin-top: 7px;">
+        <p style="color: #fff; font-family: Roboto; font-size: 18px; text-align: center;margin-top: 15px;">Made with ❤️ by <a href="https://github.com/pbpcodes">Pranendu</a></p>
+      </footer>
+  </body>
+</html>

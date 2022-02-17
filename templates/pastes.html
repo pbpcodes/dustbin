@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}All the files dumped till date!{% endblock %}
+
+{% block main %}
+<div class="container">
+    <table class="u-full-width">
+	<thead>
+	    <tr>
+		<th style="color: white;">Paste</th>
+		<th style="color: white;">Title</th>
+		<th style="color: white;">Language</th>
+		<th style="color: white;">Date</th>
+	    </tr>
+	</thead>
+
+	<tbody>
+	    {% for paste in pastes %}
+	    <tr>
+		<td>
+		    <a href="{{ url_for('view_paste', paste_name=paste['name']) }}" target="_blank">
+			{{ paste.name }}
+		    </a>
+		</td>
+		<td style="color: white;"><em>{{ paste.title }}</em></td>
+		<td style="color: white;">{{ paste.hl_alias }}</td>
+		<td style="color: white;">{{ paste.pprint_date() }}</td>
+	    </tr>
+	    {% endfor %}
+	</tbody>
+    </table>
+</div>
+{% endblock %}
