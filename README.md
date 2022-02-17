@@ -70,7 +70,14 @@ Demo video of the website: <br>
 [![pageVideo](/static/homepage.jpg)](https://youtu.be/8p6r8FOldZs)
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+1. Give a suitable title
+2. Select language is the dump is a CODE, else, leave it as it is.
+3. Paste/Type your text/code.
+4. If want the bin to be private, click on the checkbox, else, leave it as it is.
+5. Click on "Generate Link".
+6. Copy the URL generated.
+7. Voila! 
+
 
 
 ## ✍️ Author <a name = "authors"></a>
