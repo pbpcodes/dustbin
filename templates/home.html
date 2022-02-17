@@ -7,12 +7,12 @@
   <form action="{{ url_for('submit') }}" method="POST">
     <div class="row">
       <div class="six columns">
-	<label for="pasteTitle" style="color: white;">Name your bin!</label>
-	<input style="height: 37px;" name="title" class="u-full-width" placeholder="Give me a title!" id="pasteTitle">
+	<label style="color:#ece9e9;" for="pasteTitle">Name your bin!</label>
+	<input style="height: 38px; border-radius:5px; background-color:#ece9e9;" name="title" class="u-full-width" placeholder="Give me a title!" id="pasteTitle">
       </div>
       <div class="six columns">
-	<label for="hl" style="color: white;">Language</label>
-	<select name="hl" class="u-full-width" id="hl">
+	<label for="hl" style="color: #ece9e9;">Language</label>
+	<select name="hl" style="background-color: #ece9e9;" class="u-full-width" id="hl">
 	  {% for lexer in lexers %}
 	  <option value="{{ lexer[1][0] }}"
 		  {% if lexer[0] == "Text only" %}selected{% endif %}>
@@ -24,13 +24,33 @@
     </div>
 
     <label for="content" style="color: white;">Dump your text in here!</label>
-    <textarea class="u-full-width" name="pastecontent" placeholder="Yeah go on, DUMP!" id="content" autofocus style="min-height: 200px;"></textarea>
+    <textarea style="background-color: #ece9e9; height:200px;" cols=122 name="pastecontent" placeholder="Yeah go on, DUMP!" id="content" autofocus"></textarea>
 
     <label>
       <input type="checkbox" name="privatepaste" value="true">
-      <span class="label-body" style="color: white;">Private, huh? SUS!</span>
+      <span class="label-body" style="color: white;">Check this box for Private bin!</span>
     </label>
-    <input class="button-primary" type="submit" value="Go!">
+    <input class="button-primary" type="submit" value="Generate Link!">
   </form>
+  <ul style="color:#ece9e9">
+    <li>
+      <strong>All the created bins will auto-delete after 24 hours!</strong>
+    </li>
+    <li>
+      The URL you get after clicking on "GENERATE LINK" is the link which you can copy or share.
+    </li>
+    <li>
+      If you only put an URL in the text-area, the link generated will directly point to the URL.
+    </li>
+    <li>
+      If putting a code in the text-area, make sure to select the language. Otherwise, "Text only" will do.
+    </li>
+    <li>
+      You can access all the bins created till date by other users and you by clicking on "BINS TILL DATE" button.
+    </li>
+    <li>
+      Want a PRIVATE bin? Just select the checkbox. Your bin would not show up in "BINS TILL DATE".
+    </li>
+  </ul>
 </div>
 {% endblock %}
